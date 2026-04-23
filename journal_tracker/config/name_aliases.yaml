@@ -1,39 +1,13 @@
 # Canonical name → list of variants found in metadata/assignments
 # The canonical name should match what appears in the metadata spreadsheet (Modified By column)
+#
+# Example:
+#   aliases:
+#     "Matthew Burgess":
+#       - "Matt Burgess"
+#       - "Mathew Burgess"
+#
+# This file is optional. If empty or missing, the tool still works
+# using automatic fuzzy name detection.
 
-aliases:
-  "Matthew Burgess":
-    - "Matt Burgess"
-    - "Mathew Burgess"
-  "Fathima Rasha Hifzul Rahman":
-    - "Rasha Rahman"
-    - "fathima Rasha Hifzul Rahman"
-  "Tori Murry":
-    - "Tori Murray"
-  "Sarah O'Neill":
-    - "Sarah"
-    - "Sarah O'Neil"
-    - "SO"
-  "Aidee Barajas":
-    - "Aidee"
-  "Steven Henderson":
-    - "Steven"
-  "Skylar Sakis":
-    - "Skylar"
-  "Nona Guvenoz":
-    - "Noni Guvenoz"
-    - "Nona Güvenöz"
-  "Mariko Jurcsak":
-    - "Mariko Jurczak"
-  "Leahy O'Connor":
-    - "Leahy O'Connor"
-  "Nicolas Buitrago Rey":
-    - "Nicholas Buitrago Rey"
-  "Krystal Szerszen":
-    - "Kyrstal Szerszen"
-  "Helenna Xu":
-    - "Zihan Xu"
-  "Cameron Veilleux":
-    - "Cameron Villeux"
-  "Aashiyana Adhikari":
-    - "Aashiyana Adihari"
+aliases: {}

@@ -18,11 +18,11 @@ python -m journal_tracker.main --input input --sharepoint
 ```
 journal-workflow/
 ├── input/                          ← One subfolder per team
-│   ├── Team Cameron/
+│   ├── Team A/
 │   │   ├── article.docx            ← Tracked-changes doc (editing data)
 │   │   ├── Editing Assignments.csv ← Assignment CSVs (who edits which FNs)
-│   │   └── Team Cameron - Sheet1.csv  ← SP metadata (Team, Footnote, Filename, Modified By)
-│   ├── Team Camille/
+│   │   └── Team A - Sheet1.csv     ← SP metadata (Team, Footnote, Filename, Modified By)
+│   ├── Team B/
 │   └── ...
 ├── output/                         ← Generated JICL Audit.xlsx
 ├── journal_tracker/                ← Python package
@@ -41,7 +41,7 @@ journal-workflow/
 
 ## Key concepts
 
-- **Cross-team matching**: Team Kyle members may edit Team Cameron's article. Assignment matching uses overlap between assigned editors and actual editors in the docx.
+- **Cross-team matching**: One team's members may edit another team's article. Assignment matching uses overlap between assigned editors and actual editors in the docx.
 - **Name aliases**: People appear under different names in docx metadata vs CSVs. `config/name_aliases.yaml` maps variants to canonical names.
 - **Section detection**: Assignment CSVs have headers like "Source Pull Round 1", "Editing Round 2". Regex patterns in `config.py` detect these to categorize assignments.
 - **Metadata CSVs vs assignment CSVs**: Metadata CSVs have columns (Team, Footnote, Filename, Modified By) — these are SP file listings. Assignment CSVs list who is assigned to which footnote ranges. The parser distinguishes them automatically.
