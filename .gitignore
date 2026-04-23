@@ -1,0 +1,17 @@
+# Input data (team-specific, changes every year)
+input/*/
+
+# Generated reports
+output/*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+journal_tracker/config/sharepoint.yaml
